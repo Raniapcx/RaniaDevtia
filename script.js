@@ -1,25 +1,3 @@
-// Données d'exemple pour les produits
-const produits = [
-  { id: 1, nom: "Produit 1", prix: 19.99, image: "https://picsum.photos/300/300?random=4" },
-  { id: 2, nom: "Produit 2", prix: 29.99, image: "https://picsum.photos/300/300?random=5" },
-  { id: 3, nom: "Produit 3", prix: 39.99, image: "https://picsum.photos/300/300?random=6" },
-];
-
-// Écouteurs d'événements
-document.addEventListener('DOMContentLoaded', () => {
-  mettreAJourComptePanier();
-  afficherProduits();
-  afficherPanier();
-
-  const btnMenuMobile = document.getElementById('btnMenuMobile');
-  const menuMobile = document.getElementById('menuMobile');
-  if (btnMenuMobile && menuMobile) {
-      btnMenuMobile.addEventListener('click', () => {
-          menuMobile.classList.toggle('hidden');
-      });
-  }
-
-
 
 
   const formConnexion = document.getElementById('formConnexion');
@@ -38,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
           formContact.reset();
       });
   }
-});
 
         //contact        
         
