@@ -42,3 +42,31 @@
       
       window.addEventListener('scroll', handleScroll);
       window.addEventListener('load', handleScroll);
+
+
+
+// أولاً، تأكد من تهيئة EmailJS بمفتاحك العام
+(function() {
+  emailjs.init("BzzzgWOeKEBrfr9nV"); // استبدل YOUR_PUBLIC_KEY بمفتاحك العام من EmailJS
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // منع إعادة تحميل الصفحة عند الإرسال
+
+  // جمع البيانات من النموذج
+  const formData = {
+      name: document.getElementById('nom').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+  };
+
+  // إرسال البريد الإلكتروني باستخدام EmailJS
+  emailjs.send("service_dy21ajq", "template_25vmwbe", formData)
+      .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          alert("Votre message a été envoyé avec succès !");
+      }, function(error) {
+          console.log('FAILED...', error);
+          alert("Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.");
+      });
+});
