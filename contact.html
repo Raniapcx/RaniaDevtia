@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits -RaniaDevtia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .form-input:focus {
+            border-color: #5283ac;
+            box-shadow: 0 0 0 3px rgba(82, 131, 172, 0.2);
+            transition: all 0.3s ease;
+        }
+    
+        .submit-button {
+            transition: all 0.3s ease;
+        }
+    
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(82, 131, 172, 0.1);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(247, 225, 225);">
+    <header class="bg-white shadow-md" style="font-family: Sofia, sans-serif;">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-gray-800"style="color: rgb(215, 185, 185);">RaniaDevtia</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900" style="color:#5283ac";>Accueil</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);" >Portfolio</a>
+                    <a href="produits.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Produits</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="btnMenuMobile">
+                        <i class="fas fa-bars text-gray-600" style="color: rgb(215, 185, 185);"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="menuMobile" class="md:hidden hidden mt-3 space-y-2">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Accueil</a>
+                <a href="portfolio.html" class="block text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);">Portfolio</a>
+                <a href="Produits.html" class="block text-gray-600 hover:text-gray-900" style="color: #5283ac";>Produits</a>
+                <a href="blog.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);" >Blog</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900" style="color: #5283ac";>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <style>
+
+        #menuMobile {
+            display: none;
+        }
+        #menuMobile.active {
+            display: block;
+        }
+    </style>
+    <main>
+        <section class="container mx-auto px-6 py-12">
+            <h1 class="text-4xl font-bold text-center mb-8" style="color: #5283ac;" data-aos="fade-down">Contactez moi</h1>
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8" data-aos="fade-up" data-aos-delay="200">
+                <form id="formContact">
+                    <div class="mb-4">
+                        <label for="nom" class="block text-gray-700 text-sm font-bold mb-2" style="color: #5283ac;">Nom</label>
+                        <input type="text" id="nom" name="name" class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2" style="color: #5283ac;">Email</label>
+                        <input type="email" id="email" name="email" class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2" style="color: hsl(207, 35%, 50%);">Message</label>
+                        <textarea id="message" name="message" rows="4" class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button class="submit-button inline-block text-white bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 rounded-lg" style="background-color: rgb(247, 225, 225); color: #5283ac;">
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6" style="background-color: #5283ac; color: rgb(247, 225, 225); font-family: Sofia, sans-serif;">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/3 text-center md:text-left">
+                    <h3 class="text-lg font-semibold" style="color: white;">RaniaDevtia</h3>
+                    <p class="mt-2">Votre destination pour des services et des produits de qualité.</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center mt-4 md:mt-0">
+                    <h3 class="text-lg font-semibold" style="color: white;">Liens rapides</h3>
+                    <ul class="mt-2">
+                        <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                        <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-gray-300">Portfolio</a></li>
+                        <li><a href="produits.html" class="hover:text-gray-300">Produits</a></li>
+                        <li><a href="blog.html" class="hover:text-gray-300">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right mt-4 md:mt-0">
+                    <h3 class="text-lg font-semibold" style="color: white;">Suivez-moi</h3>
+                    <div class="mt-2" style="color: white;">
+                        <a href="https://github.com/Raniapcx" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/raniadevtia?igsh=c2w0bThlanF3a3E5" class="text-2xl mx-2 hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/rania-devtia" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/raniadevtia" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8" style="color: white;">
+                <p>&copy; 2024 RaniaDevtia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('btnMenuMobile').addEventListener('click', function() {
+            document.getElementById('menuMobile').classList.toggle('active');
+        });
+    </script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Script pour le menu mobile et le header sticky
+        const header = document.querySelector('header');
+        const btnMenuMobile = document.getElementById('btnMenuMobile');
+        const menuMobile = document.getElementById('menuMobile');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('bg-opacity-90', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90', 'backdrop-blur-sm');
+            }
+        });
+
+        btnMenuMobile.addEventListener('click', () => {
+            menuMobile.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
