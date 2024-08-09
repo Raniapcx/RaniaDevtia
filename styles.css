@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+  background-color: rgb(247, 225, 225);
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #5283ac, rgb(215, 185, 185));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.animated-bg span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(82, 131, 172, 0.3);
+  animation: move 25s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #5283ac;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(215, 185, 185);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(82, 131, 172, 0.3);
+}
+
+
+
+
+#about-me, #skills {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#about-me.visible, #skills.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about-me h2, #skills h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #5283ac;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#about-me p {
+  font-weight: 300;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skill-item i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  font-weight: 600;
+  color: #555;
+}

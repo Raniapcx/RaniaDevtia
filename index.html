@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil -RaniaDevtia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-white shadow-md" style="font-family: Sofia, sans-serif;">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-gray-800"style="color: rgb(215, 185, 185);">RaniaDevtia</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900" style="color:#5283ac";>Accueil</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);" >Portfolio</a>
+                    <a href="produits.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Produits</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="btnMenuMobile">
+                        <i class="fas fa-bars text-gray-600" style="color: rgb(215, 185, 185);"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="menuMobile" class="md:hidden hidden mt-3 space-y-2">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900" style="color: #5283ac";>Accueil</a>
+                <a href="portfolio.html" class="block text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);">Portfolio</a>
+                <a href="Produits.html" class="block text-gray-600 hover:text-gray-900" style="color: #5283ac";>Produits</a>
+                <a href="blog.html" class="text-gray-600 hover:text-gray-900" style="color:rgb(215, 185, 185);" >Blog</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900" style="color: #5283ac";>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <style>
+
+        #menuMobile {
+            display: none;
+        }
+        #menuMobile.active {
+            display: block;
+        }
+    </style>
+
+
+     <main class="container mx-auto px-4 py-12">
+            <div class="text-center mb-12">
+                <div class="animated-bg">
+                    <span style="top: 20%; left: 10%;"></span>
+                    <span style="top: 80%; left: 20%;"></span>
+                    <span style="top: 40%; left: 30%;"></span>
+                    <span style="top: 60%; left: 40%;"></span>
+                    <span style="top: 30%; left: 50%;"></span>
+                    <span style="top: 70%; left: 60%;"></span>
+                    <span style="top: 50%; left: 70%;"></span>
+                    <span style="top: 10%; left: 80%;"></span>
+                    <span style="top: 90%; left: 90%;"></span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text animate-pulse" data-aos="fade-down" style="font-family: Sofia, sans-serif;">
+                    RaniaDevtia
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8" data-aos="fade-up">
+                    Développeuse Web | UI/UX Designer | Freelancer | Lycéenne en commerce
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-[#5283ac]" data-aos="fade-up">Développement Web</h2>
+                    <p class="text-gray-700"data-aos="fade-up" >Création de sites web modernes et responsives avec les dernières technologies.</p>
+                </div>
+                <div class="card p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-[#5283ac]" data-aos="fade-up">UI/UX Design</h2>
+                    <p class="text-gray-700" data-aos="fade-up">Conception d'interfaces utilisateur intuitives et esthétiques pour une expérience optimale.</p>
+                </div>
+                <div class="card p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-[#5283ac]" data-aos="fade-up">Freelance</h2>
+                    <p class="text-gray-700" data-aos="fade-up">Services personnalisés pour répondre à vos besoins spécifiques en développement et design.</p>
+                </div>
+            </div>
+    
+            <div class="text-center mt-12">
+                <a href="contact.html" class="btn-primary inline-block px-8 py-3 text-lg font-semibold text-white rounded-full">
+                    Contactez-moi
+                </a>
+            </div>
+
+            <section id="about-me" class="py-16 mt-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12">À propos de moi</h2>
+                    <div class="max-w-3xl mx-auto">
+                        <p class="text-lg mb-6">Bonjour, je suis Rania - développeuse web et conceptrice UI/UX passionnée par la création d'expériences numériques exceptionnelles.</p>
+                        <p class="text-lg mb-6">En tant qu'étudiante en commerce au lycée et freelance dans le développement web, je combine vision créative et compétences techniques pour créer des sites web attrayants, réactifs et performants.</p>
+                        <p class="text-lg mb-6">J'ai hâte de collaborer avec vous sur votre prochain projet pour transformer vos idées en une réalité numérique impressionnante !</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12">Mes compétences</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-4xl mx-auto">
+                        <div class="skill-item">
+                            <i class="fab fa-html5 text-5xl mb-2" style="color: #E34F26;"></i>
+                            <p class="text-center">HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt text-5xl mb-2" style="color: #1572B6;"></i>
+                            <p class="text-center">CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square text-5xl mb-2" style="color: #F7DF1E;"></i>
+                            <p class="text-center">JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react text-5xl mb-2" style="color: #61DAFB;"></i>
+                            <p class="text-center">React</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap text-5xl mb-2" style="color: #7952B3;"></i>
+                            <p class="text-center">Bootstrap</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma text-5xl mb-2" style="color: #F24E1E;"></i>
+                            <p class="text-center">Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    
+    <script>
+        document.getElementById('btnMenuMobile').addEventListener('click', function() {
+            document.getElementById('menuMobile').classList.toggle('active');
+        });
+    </script>
+<footer class="bg-gray-800 text-white py-6" style="background-color: #5283ac; color: rgb(247, 225, 225); font-family: Sofia, sans-serif;">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-between items-center">
+            <div class="w-full md:w-1/3 text-center md:text-left">
+                <h3 class="text-lg font-semibold" style="color: white;">RaniaDevtia</h3>
+                <p class="mt-2">Votre destination pour des services et des produits de qualité.</p>
+            </div>
+            <div class="w-full md:w-1/3 text-center mt-4 md:mt-0">
+                <h3 class="text-lg font-semibold" style="color: white;">Liens rapides</h3>
+                <ul class="mt-2">
+                    <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                    <li><a href="portfolio.html" class="hover:text-gray-300">Portfolio</a></li>
+                    <li><a href="produits.html" class="hover:text-gray-300">Produits</a></li>
+                    <li><a href="blog.html" class="hover:text-gray-300">Blog</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3 text-center md:text-right mt-4 md:mt-0">
+                <h3 class="text-lg font-semibold" style="color: white;">Suivez-moi</h3>
+                <div class="mt-2" style="color: white;">
+                    <a href="https://github.com/Raniapcx" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/raniadevtia?igsh=c2w0bThlanF3a3E5" class="text-2xl mx-2 hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/rania-devtia" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/raniadevtia" class="text-2xl mx-2 hover:text-gray-300"><i class="fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8" style="color: white;">
+            <p>&copy; 2024 RaniaDevtia. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
